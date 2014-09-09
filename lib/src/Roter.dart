@@ -24,4 +24,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 part of roter;
 
 void start() {
+  print("Hola Mundo!");
+  var game = new Game(160, 160, AUTO, '');
+
+  game.state.add('Boot', new Boot());
+  game.state.add('Preload', new Preload());
+  game.state.add('Game', new TwoD());
+
+  game.state.start('Boot');
 }
+

@@ -21,11 +21,15 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-library alienzed;
+library roter;
 
 import 'dart:html';
 import 'dart:math';
 import 'dart:js';
 import 'dart:async' as async;
+import 'package:play_phaser/phaser.dart';
 
+part 'src/Boot.dart';
+part 'src/Preload.dart';
+part 'src/TwoD.dart';
 part 'src/Roter.dart';
